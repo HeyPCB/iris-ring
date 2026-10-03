@@ -1,0 +1,591 @@
+{
+  "parts": {
+    "bound": 26,
+    "unsourced": 0,
+    "conflicts": 0,
+    "refs_by_status": {
+      "bound": [
+        "D1",
+        "C1",
+        "D2",
+        "C2",
+        "D3",
+        "C3",
+        "D4",
+        "C4",
+        "D5",
+        "C5",
+        "D6",
+        "C6",
+        "D7",
+        "C7",
+        "D8",
+        "C8",
+        "D9",
+        "C9",
+        "D10",
+        "C10",
+        "D11",
+        "C11",
+        "D12",
+        "C12",
+        "R1",
+        "C13"
+      ],
+      "unsourced": [],
+      "conflict": []
+    },
+    "not_in_bom": [],
+    "extended_distinct": [
+      "C2976072"
+    ],
+    "extended_fee_usd": 3.0,
+    "findings": [
+      {
+        "code": "jlcpcb_extended_parts",
+        "severity": "info",
+        "detail": "1 distinct Extended parts, about $3 in JLC loading fees",
+        "fix": "swap an Extended part for a Basic one where the table lists one"
+      }
+    ],
+    "table": "lcsc_pinned.json",
+    "table_source": "HeyPCB runner/cache/jlcparts/cache.sqlite3, table jlc_components, queried 2026-09-26. Each row's `snapshot` is that row's fetched_at."
+  },
+  "compose": {
+    "components": 30,
+    "nets": 15,
+    "noConnects": [
+      "D12.1"
+    ],
+    "ran": true,
+    "seconds": 0.4
+  },
+  "schematic": {
+    "paper": "A3",
+    "file": "iris_ring.kicad_sch",
+    "ran": true,
+    "seconds": 2.2
+  },
+  "erc": {
+    "ran": true,
+    "errors": 0,
+    "warnings": 0,
+    "types": [],
+    "seconds": 1.4
+  },
+  "netlist": {
+    "ok": true,
+    "missing": [],
+    "extra": [],
+    "differ": [],
+    "nets": 15,
+    "ran": true,
+    "seconds": 0.3
+  },
+  "board": {
+    "footprints": 30,
+    "outline_mm": [
+      18.0,
+      18.0
+    ],
+    "stackup": {
+      "copper": 2,
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "planes": {},
+      "plane_layers": [],
+      "signal_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "dfm_profile": "jlcpcb_2layer"
+    },
+    "ran": true,
+    "seconds": 0.5
+  },
+  "place": {
+    "parts": 30,
+    "log": [
+      "D1 -> (2.62, 7.29) rot 0 : rung 0 lock: LED 1 of 12 at phi 195 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 0 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D2 -> (4.33, 4.33) rot 270 : rung 0 lock: LED 2 of 12 at phi 225 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 270 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D3 -> (7.29, 2.62) rot 270 : rung 0 lock: LED 3 of 12 at phi 255 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 270 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D4 -> (10.71, 2.62) rot 270 : rung 0 lock: LED 4 of 12 at phi 285 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 270 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D5 -> (13.67, 4.33) rot 180 : rung 0 lock: LED 5 of 12 at phi 315 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 180 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D6 -> (15.38, 7.29) rot 180 : rung 0 lock: LED 6 of 12 at phi 345 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 180 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D7 -> (15.38, 10.71) rot 180 : rung 0 lock: LED 7 of 12 at phi 15 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 180 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D8 -> (13.67, 13.67) rot 90 : rung 0 lock: LED 8 of 12 at phi 45 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 90 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D9 -> (10.71, 15.38) rot 90 : rung 0 lock: LED 9 of 12 at phi 75 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 90 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D10 -> (7.29, 15.38) rot 90 : rung 0 lock: LED 10 of 12 at phi 105 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 90 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D11 -> (4.33, 13.67) rot 0 : rung 0 lock: LED 11 of 12 at phi 135 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 0 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "D12 -> (2.62, 10.71) rot 0 : rung 0 lock: LED 12 of 12 at phi 165 deg on r = 6.6 mm (spec 4.4: 15 deg + 30 deg k); quarter turn 0 puts DOUT and GND outward, DIN and VDD inward, DOUT clockwise",
+      "C1 -> (4.00, 7.29) rot 270 : rung 0 lock: D1's 100 nF on the back under the LED's inner pads, along the ring: pad 1 (5V_LED) beside its VDD pad, pad 2 (GND) beside its DIN pad; 5.0 mm out on the LED's axis, clear of the camera-holder square and leaving the band above the key flat free",
+      "C2 -> (3.77, 3.77) rot 180 : rung 0 lock: D2's 100 nF on the back behind its LED, r = 7.4 mm: the camera-holder square's corner reaches r = 6.15 on the diagonal, so this one cannot sit inside the LED circle",
+      "C3 -> (7.29, 4.00) rot 180 : rung 0 lock: D3's 100 nF on the back under the LED's inner pads, along the ring: pad 1 (5V_LED) beside its VDD pad, pad 2 (GND) beside its DIN pad; 5.0 mm out on the LED's axis, clear of the camera-holder square and leaving the band above the key flat free",
+      "C4 -> (10.71, 4.00) rot 180 : rung 0 lock: D4's 100 nF on the back under the LED's inner pads, along the ring: pad 1 (5V_LED) beside its VDD pad, pad 2 (GND) beside its DIN pad; 5.0 mm out on the LED's axis, clear of the camera-holder square and leaving the band above the key flat free",
+      "C5 -> (14.23, 3.77) rot 0 : rung 0 lock: D5's 100 nF on the back behind its LED, r = 7.4 mm: the camera-holder square's corner reaches r = 6.15 on the diagonal, so this one cannot sit inside the LED circle",
+      "C6 -> (14.00, 7.29) rot 90 : rung 0 lock: D6's 100 nF on the back under the LED's inner pads, along the ring: pad 1 (5V_LED) beside its VDD pad, pad 2 (GND) beside its DIN pad; 5.0 mm out on the LED's axis, clear of the camera-holder square and leaving the band above the key flat free",
+      "C7 -> (14.00, 10.71) rot 90 : rung 0 lock: D7's 100 nF on the back under the LED's inner pads, along the ring: pad 1 (5V_LED) beside its VDD pad, pad 2 (GND) beside its DIN pad; 5.0 mm out on the LED's axis, clear of the camera-holder square and leaving the band above the key flat free",
+      "C8 -> (14.23, 14.23) rot 0 : rung 0 lock: D8's 100 nF on the back behind its LED, r = 7.4 mm: the camera-holder square's corner reaches r = 6.15 on the diagonal, so this one cannot sit inside the LED circle",
+      "C9 -> (10.71, 14.00) rot 0 : rung 0 lock: D9's 100 nF on the back under the LED's inner pads, along the ring: pad 1 (5V_LED) beside its VDD pad, pad 2 (GND) beside its DIN pad; 5.0 mm out on the LED's axis, clear of the camera-holder square and leaving the band above the key flat free",
+      "C10 -> (7.29, 14.00) rot 0 : rung 0 lock: D10's 100 nF on the back under the LED's inner pads, along the ring: pad 1 (5V_LED) beside its VDD pad, pad 2 (GND) beside its DIN pad; 5.0 mm out on the LED's axis, clear of the camera-holder square and leaving the band above the key flat free",
+      "C11 -> (3.77, 14.23) rot 180 : rung 0 lock: D11's 100 nF on the back behind its LED, r = 7.4 mm: the camera-holder square's corner reaches r = 6.15 on the diagonal, so this one cannot sit inside the LED circle",
+      "C12 -> (4.00, 10.71) rot 270 : rung 0 lock: D12's 100 nF on the back under the LED's inner pads, along the ring: pad 1 (5V_LED) beside its VDD pad, pad 2 (GND) beside its DIN pad; 5.0 mm out on the LED's axis, clear of the camera-holder square and leaving the band above the key flat free",
+      "P1 -> (2.05, 5.93) rot 0 : rung 0 lock: RING wire pad P1 (5V_LED, spec section 5) on the back at r = 7.6 mm, phi 203.8 deg: pads in harness order on the temporal side, 2.1 mm apart so the stock pads' 2.0 mm courtyards do not touch",
+      "P2 -> (1.47, 7.95) rot 0 : rung 0 lock: RING wire pad P2 (LED_DIN, spec section 5) on the back at r = 7.6 mm, phi 187.9 deg: pads in harness order on the temporal side, 2.1 mm apart so the stock pads' 2.0 mm courtyards do not touch",
+      "P3 -> (1.47, 10.05) rot 0 : rung 0 lock: RING wire pad P3 (GND, spec section 5) on the back at r = 7.6 mm, phi 172.1 deg: pads in harness order on the temporal side, 2.1 mm apart so the stock pads' 2.0 mm courtyards do not touch",
+      "P4 -> (2.05, 12.07) rot 0 : rung 0 lock: RING wire pad P4 (GND, spec section 5) on the back at r = 7.6 mm, phi 156.2 deg: pads in harness order on the temporal side, 2.1 mm apart so the stock pads' 2.0 mm courtyards do not touch",
+      "R1 -> (3.02, 8.95) rot 270 : rung 0 lock: 33 ohm DIN series resistor between the wire pads and C1/C12, pad 1 (LED_DIN) up toward P2, pad 2 (DIN1) down into the gap between D12 and D1",
+      "C13 -> (4.00, 5.40) rot 90 : rung 0 lock: 4.7 uF bulk beside P1 (5V_LED), in line with C1, its pad 1 (5V_LED) facing C1's pad 1"
+    ],
+    "ran": true,
+    "seconds": 0.3
+  },
+  "route": {
+    "before": 64,
+    "after": 0,
+    "open_by_net": {},
+    "fixes": [],
+    "passes": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        17,
+        1
+      ],
+      [
+        18,
+        1
+      ]
+    ],
+    "stats": {
+      "tracks": 225,
+      "vias": 10,
+      "length_mm": 191.4,
+      "length_by_layer_mm": {
+        "B.Cu": 86.0,
+        "F.Cu": 105.4
+      }
+    },
+    "layers": [
+      [
+        "F.Cu",
+        "signal"
+      ],
+      [
+        "B.Cu",
+        "signal"
+      ]
+    ],
+    "ladder": [
+      {
+        "rung": 1,
+        "tag": "1_fanout",
+        "classes": {},
+        "fanout": true,
+        "export": {
+          "poursWithheld": 1,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 10,
+            "renamed": 8,
+            "nets": 16
+          },
+          "viaViaClearance_mm": 0.3
+        },
+        "seconds": 10.7,
+        "ok": true,
+        "log": {
+          "nets": {
+            "GND": 1
+          },
+          "timedOut": false,
+          "noProgress": true,
+          "last_unrouted": 1,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 4,
+          "kept_narrow": 11,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "last_mile": {
+          "ok": true,
+          "openBefore": 1,
+          "openAfterModel": 0,
+          "closed": 1,
+          "tracks": 4,
+          "vias": 0,
+          "deadlineHit": false,
+          "limitations": [],
+          "seconds": 0.07,
+          "connections": [
+            {
+              "net": "GND",
+              "from": "D10.2",
+              "to": "C1.2",
+              "outcome": "closed",
+              "vias": 0,
+              "lengthMm": 3.16
+            }
+          ],
+          "accepted": true,
+          "verdict": {
+            "beforeU": 1,
+            "afterU": 0,
+            "beforeE": 0,
+            "afterE": 0,
+            "introduced": 0,
+            "rekeyed": 0,
+            "introducedTypes": [],
+            "kind": "ok",
+            "accept": true
+          },
+          "kept_tracks": 4,
+          "kept_vias": 0
+        },
+        "open_by_net": {},
+        "stats": {
+          "tracks": 225,
+          "vias": 10,
+          "length_mm": 191.4,
+          "length_by_layer_mm": {
+            "B.Cu": 86.0,
+            "F.Cu": 105.4
+          }
+        }
+      },
+      {
+        "rung": 1,
+        "tag": "1_nofanout",
+        "classes": {},
+        "fanout": false,
+        "export": {
+          "poursWithheld": 1,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 10,
+            "renamed": 8,
+            "nets": 16
+          },
+          "viaViaClearance_mm": 0.3
+        },
+        "seconds": 11.2,
+        "ok": true,
+        "log": {
+          "nets": {
+            "DIN11": 1
+          },
+          "timedOut": false,
+          "noProgress": true,
+          "last_unrouted": 1,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 0,
+          "kept_narrow": 0,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 1,
+          "score": 1,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 1,
+        "last_mile": {
+          "ok": true,
+          "openBefore": 1,
+          "openAfterModel": 1,
+          "closed": 0,
+          "tracks": 0,
+          "vias": 0,
+          "deadlineHit": false,
+          "limitations": [],
+          "seconds": 0.23,
+          "connections": [
+            {
+              "net": "DIN11",
+              "from": "D10.1",
+              "to": "D11.3",
+              "outcome": "no_path"
+            }
+          ],
+          "accepted": false
+        },
+        "open_by_net": {
+          "DIN11": 1
+        },
+        "stats": {
+          "tracks": 204,
+          "vias": 7,
+          "length_mm": 208.7,
+          "length_by_layer_mm": {
+            "B.Cu": 104.9,
+            "F.Cu": 103.8
+          }
+        }
+      }
+    ],
+    "kept_rung": "1_fanout",
+    "classes_routed": {},
+    "fanout_kept": true,
+    "fanout_compare": {
+      "1_fanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 10,
+        "seconds": 10.7
+      },
+      "1_nofanout": {
+        "open": 1,
+        "score": 1,
+        "vias": 7,
+        "seconds": 11.2
+      }
+    },
+    "pad_vias": [],
+    "timedOut": false,
+    "noProgress": true,
+    "ran": true,
+    "seconds": 28.8
+  },
+  "pour": {
+    "plan": [
+      {
+        "layer": "F.Cu",
+        "net": "GND",
+        "priority": 0
+      },
+      {
+        "layer": "B.Cu",
+        "net": "GND",
+        "priority": 0
+      }
+    ],
+    "open_before": 0,
+    "open_after_pour": 0,
+    "stitch_vias": 0,
+    "open_after_stitch": 0,
+    "island_repair_vias": 0,
+    "open_final": 0,
+    "zones": [],
+    "stats": {
+      "tracks": 225,
+      "vias": 10,
+      "length_mm": 191.4,
+      "length_by_layer_mm": {
+        "B.Cu": 86.0,
+        "F.Cu": 105.4
+      }
+    },
+    "ran": true,
+    "seconds": 0.4
+  },
+  "silk": {
+    "silk_clipped": 0,
+    "pin_labels": 0,
+    "silk_refused": [],
+    "words": 2,
+    "refs_seated": 5,
+    "refs_hidden": 23,
+    "title_offset_mm": [
+      0.0,
+      0.0
+    ],
+    "title_lines": 0,
+    "stitch_vias_displaced": 0,
+    "ran": true,
+    "seconds": 0.2
+  },
+  "drc": {
+    "ran": true,
+    "state": "fresh",
+    "board_sha": "530340e61d7e4d8d1583d7eeabb35bdafea94283d167b1c90bab1c4e0e35ea19",
+    "errors": 0,
+    "warnings": 0,
+    "unconnected": 0,
+    "parity": 0,
+    "error_types": {},
+    "warning_types": {},
+    "repairs": [],
+    "seconds": 1.5
+  },
+  "dfm": {
+    "ran": true,
+    "profile": "jlcpcb_2layer",
+    "copper_layers": 2,
+    "errors": 0,
+    "warnings": 1,
+    "rows": [
+      {
+        "rule": "footprint_silk_width",
+        "severity": "warning",
+        "count": 92,
+        "min_mm": 0.12,
+        "note": "stock footprint silk down to 0.12 mm; the fab prints it at its 0.15 mm minimum"
+      }
+    ]
+  },
+  "view3d": {
+    "frames": 63,
+    "ran": true,
+    "seconds": 0.1
+  },
+  "fab": {
+    "gerbers": [
+      "iris_ring-B_Cu.gbl",
+      "iris_ring-B_Mask.gbs",
+      "iris_ring-B_Paste.gbp",
+      "iris_ring-B_Silkscreen.gbo",
+      "iris_ring-Edge_Cuts.gm1",
+      "iris_ring-F_Cu.gtl",
+      "iris_ring-F_Mask.gts",
+      "iris_ring-F_Paste.gtp",
+      "iris_ring-F_Silkscreen.gto",
+      "iris_ring-job.gbrjob"
+    ],
+    "copper_layers": 2,
+    "copper_gerbers": [
+      "iris_ring-F_Cu.gtl",
+      "iris_ring-B_Cu.gbl"
+    ],
+    "gerber_job": {
+      "file": "iris_ring-job.gbrjob",
+      "layer_number": 2,
+      "board_thickness_mm": 1.6,
+      "copper_files": [
+        "iris_ring-F_Cu.gtl",
+        "iris_ring-B_Cu.gbl"
+      ],
+      "copper_mm": [
+        0.035,
+        0.035
+      ],
+      "dielectric_mm": [
+        1.51
+      ],
+      "dielectric": [
+        "FR4"
+      ]
+    },
+    "drill": [
+      "iris_ring.drl",
+      "iris_ring-drl_map.gbr"
+    ],
+    "zip": "iris_ring_gerbers.zip",
+    "pos": "iris_ring_pos.csv",
+    "cpl": "iris_ring_cpl_jlc.csv",
+    "cpl_rotations_corrected": 8,
+    "bom": "iris_ring_bom.csv",
+    "schematic_pdf": "iris_ring_schematic.pdf",
+    "step": "iris_ring.step",
+    "ready": true,
+    "blockers": [],
+    "drc_state": "fresh",
+    "ran": true,
+    "seconds": 2.1
+  },
+  "render": {
+    "ran": true,
+    "seconds": 735.1
+  },
+  "video": {
+    "ran": true,
+    "seconds": 52.0
+  }
+}
